@@ -10,9 +10,7 @@ CSS3 – Custom responsive styling
 
 Bootstrap 5 – Responsive layout and utility classes
 
-JavaScript (Vanilla + AngularJS) – Dynamic behavior and data-binding
-
-AngularJS (v1.x) – MVC architecture for building dynamic UIs
+AngularJS (v1.x) –  Dynamic behavior, data-binding and MVC architechure
 
 Select2 – Dynamic, searchable filtering with multi-select dropdowns
 
