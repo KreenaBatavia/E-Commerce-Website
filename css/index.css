@@ -1,0 +1,238 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color:#88ad35;
+  color: #101010;
+}
+
+.font-Inst_Sans{
+    font-family: "Instrument Sans";
+}
+
+.font-Inter{
+    font-family: "Inter";
+}
+
+/** Navbar **/
+
+.transparent-nav {
+  position: absolute; 
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
+
+.custom-navlink {
+  color: white !important;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.custom-navlink:hover {
+  color: #ecf4d3 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+} 
+
+.logo{
+  height: 50px;
+  width: 130px;
+  border-radius: 20px;
+}
+
+/** Hero Section **/
+
+.hero-section {
+  height: 100vh;
+  background: url("../assests/hero.png") no-repeat center center/cover;
+  font-family: "Instrument Sans"
+}
+
+.small-text {
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.hero-btn{
+  background-color: #88ad35;
+  color: white;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #74932d !important;
+}
+
+/** Features **/
+
+.features {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px !important;
+}
+
+.indi-feature {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-circle {
+  background-color: #ecf4d3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle i {
+  font-size: 36px;
+}
+
+.heading {
+  font-size: 18px;
+  margin: 5px 0;
+  font-family: "Inter";
+}
+
+.description {
+  font-size: 14px;
+  font-family: "Instrument Sans";
+}
+
+/** Trending products **/
+
+.product-card {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.product-image-container {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.product-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.stars i {
+    color: gold;
+    font-size: 0.8rem;
+}
+
+/** Flash **/
+
+.overlay {
+  background-image: url("../assests/flash.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+
+.overlay-text{
+  font-size: clamp(2rem, 5vw);
+}
+/** Categories **/
+
+.category-section {
+    padding-top: 3rem ;
+}
+
+.category-card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.category-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 220px;
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/** Testimonals **/
+
+.testimonials {
+  background-color: #eaf4d3;
+  padding: 4rem 0;
+}
+
+.testimonials h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.testimonial-card i {
+  font-size: 1.5rem;
+  color: #6cb43f;
+  margin-bottom: 1rem;
+}
+
+.testimonial-client {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testimonial-client img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.testimonial-client span {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/** Footer **/
+
+.custom-footer{
+  font-family: "Instrument Sans";
+  background-color: #edf5d1 !important;
+}
+
+.custom-footer-navlink:hover {
+  color: #88ad35 !important;
+}

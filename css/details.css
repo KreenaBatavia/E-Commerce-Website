@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.font-Inst_Sans{
+    font-family: "Instrument Sans";
+}
+
+.font-Inter{
+    font-family: "Inter";
+}
+
+::selection {
+  background-color:#88ad35;
+  color: #101010;
+}
+
+/** Navbar **/
+
+.custom-navlink {
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.custom-navlink:hover,
+.custom-navlink:active {
+  color:  #88ad35 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.logo{
+  height: 50px;
+  width: 130px;
+  border-radius: 20px;
+}
+
+/** Products **/
+
+.product-image {
+  width: 100%;
+  max-width: 400px;  
+  height: 400px;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/** Footer **/
+
+.custom-footer{
+  background-color: #edf5d1 !important;
+  margin-top: 230px;
+}
+
+.custom-footer-navlink:hover,
+.custom-footer-navlink:active {
+  color: #88ad35 !important;
+}

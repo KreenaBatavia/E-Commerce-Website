@@ -1,0 +1,125 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.font-Inst_Sans{
+    font-family: "Instrument Sans";
+}
+  
+.font-Inter{
+    font-family: "Inter";
+}
+
+::selection {
+  background-color:#88ad35;
+  color: #101010;
+}
+
+/** Navbar **/
+
+.custom-navlink {
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.custom-navlink:hover,
+.custom-navlink:active {
+  color:  #88ad35 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.logo{
+  height: 50px;
+  width: 130px;
+  border-radius: 20px;
+}
+
+/** Banner **/
+
+.shop-banner {
+  background: url('../assests/shop.png') no-repeat center center/cover;
+  height: 40vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-banner h1 {
+  color: white;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.form-select {
+  max-width: 300px;
+}
+
+/** Products **/
+
+.product-card {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.product-image-container {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.product-image-container  img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.border-green {
+    border: 2px solid #9ac441;
+    border-radius: 8px; 
+    padding: 10px; 
+}
+
+
+/* Skeleton styles */
+.skeleton-bg {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 5px;
+}
+@keyframes skeleton-loading {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+}
+
+
+.stars i {
+    color: gold;
+    font-size: 0.8rem;
+}
+
+/** Footer **/
+
+.custom-footer{
+  background-color: #edf5d1 !important;
+  margin-top: 230px;
+}
+
+.custom-footer-navlink:hover,
+.custom-footer-navlink:active {
+  color: #88ad35 !important;
+}
