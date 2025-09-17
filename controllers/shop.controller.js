@@ -11,27 +11,27 @@ angular.module('ProductApp')
 
     // Load categories and initialize Select2
     ProductService.getCategories()
-    .then(res => {  
-
-        // Wait for ng-repeat to render before initializing Select2
+    .then(res => {
+        // Wait for DOM to render ng-repeat if needed
         $timeout(() => {
-            $('#categorySelect').select2({
-            ajax: {
-                url: "https://dummyjson.com/products/category-list",
-                dataType: 'json',
-                processResults: function (data) {
-                    return {
-                        results: data.map(item => ({
-                            id: item,
-                            text: item
-                        }))
-                    };
-                }
-            },
-            placeholder: 'Select a category',
-            allowClear: true
-        });
-            $('#categorySelect').on('change', function () {
+            const $select = $('#categorySelect');
+
+            // Clear any existing options and add placeholder
+            $select.empty().append('<option></option>');
+
+            // Add categories to the select
+            res.data.forEach(category => {
+                $select.append(new Option(category, category));
+            });
+
+            // Initialize Select2 without AJAX
+            $select.select2({
+                placeholder: 'Select a category',
+                allowClear: true
+            });
+
+            // Listen for changes
+            $select.on('change', function () {
                 const selected = $(this).val();
                 $scope.filterByCategory(selected);
             });
